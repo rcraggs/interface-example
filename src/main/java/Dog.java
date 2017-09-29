@@ -1,0 +1,16 @@
+/**
+ * Created by rc305 on 29/09/2017.
+ */
+public class Dog {
+
+    String name = "";
+
+    public Dog(String name) {
+        this.name = name;
+    }
+
+    public String speak() {
+        return name + " says 'Woof!'";
+    }
+
+}
