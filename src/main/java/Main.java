@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by rc305 on 29/09/2017.
  */
@@ -5,16 +8,16 @@ public class Main {
 
     public static void main(String [] args) {
 
-        Cat tabby = new Cat("Tabby");
-        Cat matilda = new Cat("Matilda");
-        Dog ralf = new Dog("Ralf");
-        Dog bobby = new Dog("Bobby");
-        Sheep dolly = new Sheep("Dolly");
+        List<Animal> animals = new ArrayList<>();
 
-        System.out.println(tabby.speak());
-        System.out.println(matilda.speak());
-        System.out.println(ralf.speak());
-        System.out.println(bobby.speak());
-        System.out.println(dolly.speak());
+        animals.add(new Cat("Tabby"));
+        animals.add(new Cat("Matilda"));
+        animals.add(new Dog("Ralf"));
+        animals.add(new Dog("Bobby"));
+        animals.add(new Sheep("Dolly"));
+
+        for (Animal a: animals){
+            System.out.println(a.speak());
+        }
     }
 }

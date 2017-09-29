@@ -1,7 +1,7 @@
 /**
  * Created by rc305 on 29/09/2017.
  */
-public class Cat {
+public class Cat implements Animal {
 
     String name = "";
 
